@@ -1,0 +1,102 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Tariff Stroll</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {% load static %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href='//fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
+<!--slider-->
+<script src="{% static 'js/modernizr.js' %}"></script>
+ <!-- jQuery -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+<!-- FlexSlider -->
+<script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
+<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+</script>
+</head>
+<body>
+<div class="header-bg">
+<div class="wrap">
+<div class="header">
+	<div class="logo" style="font-family:georgia;font-weight:bold;font-size:30px;text-align:center; ">
+		Tariff Stroll For Monetary Trading
+	</div>
+
+
+	<div class="menu">
+    	<ul class="nav">
+           <li class="active"><a href="{% url 'buyer_index' %}">Home</a></li>
+           <li><a href="{% url 'buyer_login' %}">Buyer</a></li>
+           <li><a href="{% url 'seller_login' %}">Seller</a></li>
+			<li><a href="{% url 'home_loan' %}">Home Loan</a></li>
+			<li><a href="{% url 'about' %}">About</a></li>
+			<li><a href="{% url 'contact' %}">Contact</a></li>
+			<li><a href="{% url 'services' %}">Services</a></li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+</div>
+</div>
+<div class="slider-bg">
+<div class="wrap">
+<div class="flexslider">
+   	<div class="flex-viewport" style="overflow: hidden; position: relative;">
+   		<ul class="slides" style="width: 100%; -webkit-transition: 0.6s; transition: 0.6s; -webkit-transform: translate3d(-5032px, 0, 0);">
+   			<li class="clone" style="width: 100%; float: left; display: block;">
+        		<img src="{% static 'images/slider1.jpg' %}" alt=""/>
+    		</li>
+       		<li style="width: 100%; float: left; display: block;" class="">
+    	    	<img src="{% static 'images/slider2.jpg' %}" alt=""/>
+    		</li>
+    		<li class="" style="width:100%; float: left; display: block;">
+    	    	<img src="{% static 'images/slider3.jpg' %}" alt=""/>
+    		</li>
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+<div class="content-bg">
+<div class="wrap">
+
+			<div class="section group">
+				<div class="cont span_2_of_3">
+				       <h3>Home Loan</h3>
+					<p>HDFC offers home loans with EMIs starting from ₹659 per lac and interest rates starting from 6.90%* p.a.. Create a space of your own with HDFC Home Loans. Our housing loan is tailor made for salaried individuals as they offer an attractive rate of interest and a longer tenure. We also provide you with legal and technical counselling to help you make the right home buying decision. HDFC Housing Loan offers you all online Home Loan solutions if you want to buy, construct or renovate your house. Turn your dream home into reality with HDFC Home Loans With benefits such as a low-interest rate, longer tenure, comfortable home loan EMI and doorstep service, apply online for an HDFC Home Loan today.</p>				</div>
+				<div class="rsidebar span_1_of_3">
+				      <h3>Home Loan Key Features</h3>
+					  <p class="top">
+					Home Loans for purchase of a flat, row house, bungalow from private developers in approved projects.Home Loans for purchase of properties from Development Authorities such as DDA, MHADA etc.
+					  Loans for purchase of properties in an existing Co-operative Housing Society or Apartment Owners' Association or Development Authorities settlements or privately built up homes
+					  </p>
+
+						      </div>
+				<img src="{% static 'images/loan-emi.png' %}" alt="" style="width:1200px;"/>
+	</div>
+</div>
+</div>
+
+
+</body>
+</html>

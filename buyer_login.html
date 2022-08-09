@@ -1,0 +1,102 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Tariff Stroll For Monetary Trading</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {% load static %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href='//fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
+<!--slider-->
+<script src="{% static 'js/modernizr.js' %}"></script>
+ <!-- jQuery -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+<!-- FlexSlider -->
+<script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
+<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+</script>
+</head>
+<body>
+<div class="header-bg">
+<div class="wrap">
+<div class="header">
+	<div class="logo" style="font-family:georgia;font-weight:bold;font-size:30px;text-align:center; ">
+		Tariff Stroll For Monetary Trading
+	</div>
+
+
+	<div class="menu">
+    	<ul class="nav">
+           <li class="active"><a href="{% url 'buyer_index' %}">Home</a></li>
+           <li><a href="{% url 'buyer_login' %}">Buyer</a></li>
+           <li><a href="{% url 'seller_login' %}">Seller</a></li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+</div>
+</div>
+<div class="slider-bg">
+<div class="wrap">
+<div class="flexslider">
+   	<div class="flex-viewport" style="overflow: hidden; position: relative;">
+   		<ul class="slides" style="width: 100%; -webkit-transition: 0.6s; transition: 0.6s; -webkit-transform: translate3d(-5032px, 0, 0);">
+   			<li class="clone" style="width: 100%; float: left; display: block;">
+        		<img src="{% static 'images/slider1.jpg' %}" alt=""/>
+    		</li>
+       		<li style="width: 100%; float: left; display: block;" class="">
+    	    	<img src="{% static 'images/slider2.jpg' %}" alt=""/>
+    		</li>
+    		<li class="" style="width:100%; float: left; display: block;">
+    	    	<img src="{% static 'images/slider3.jpg' %}" alt=""/>
+    		</li>
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+<div class="content-bg">
+	<div class="section group">
+				<div class="grid_1_of_3 images_1_of_3" style="margin-left:430px;width:500px;">
+					  <h3>Buyer Login</h3>
+					 <div class="side-bar-from" style="width:500px;">
+					 <form method="POST">
+						 {% csrf_token %}
+							<p>Username:</p>
+							<input type="text" name="uname">
+							<p>Password:</p>
+							<input type="password" name="password">
+
+							<input type="submit" value="Submit">
+							<input type="reset" value="Reset">
+						 <a href="{% url 'buyer_register' %}" style="color:white;text-decoration:underline;font-size:25px;margin-left:90px;">New User Register</a>
+						</form>
+					</div>
+				</div>
+
+
+			</div>
+</div>
+</div>
+
+
+</body>
+</html>

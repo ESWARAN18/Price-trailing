@@ -1,0 +1,98 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Tariff Stroll For Monetary Trading</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {% load static %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href='//fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
+<!--slider-->
+<script src="{% static 'js/modernizr.js' %}"></script>
+ <!-- jQuery -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+<!-- FlexSlider -->
+<script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
+<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+</script>
+</head>
+<body>
+<div class="header-bg">
+<div class="wrap">
+<div class="header">
+	<div class="logo" style="font-family:georgia;font-weight:bold;font-size:30px;text-align:center; ">
+		Tariff Stroll For Monetary Trading
+	</div>
+
+
+	<div class="menu">
+    	<ul class="nav">
+           <li class="active"><a href="{% url 'buyer_index' %}">Home</a></li>
+           <li><a href="{% url 'buyer_login' %}">Buyer</a></li>
+           <li><a href="{% url 'seller_login' %}">Seller</a></li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+</div>
+</div>
+<div class="slider-bg">
+<div class="wrap">
+<div class="flexslider">
+   	<div class="flex-viewport" style="overflow: hidden; position: relative;">
+   		<ul class="slides" style="width: 100%; -webkit-transition: 0.6s; transition: 0.6s; -webkit-transform: translate3d(-5032px, 0, 0);">
+   			<li class="clone" style="width: 100%; float: left; display: block;">
+        		<img src="{% static 'images/slider1.jpg' %}" alt=""/>
+    		</li>
+       		<li style="width: 100%; float: left; display: block;" class="">
+    	    	<img src="{% static 'images/slider2.jpg' %}" alt=""/>
+    		</li>
+    		<li class="" style="width:100%; float: left; display: block;">
+    	    	<img src="{% static 'images/slider3.jpg' %}" alt=""/>
+    		</li>
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+<div class="content-bg">
+<div class="wrap">
+
+			<div class="section group">
+				<div class="cont span_2_of_3">
+				       <h3>international land for sale </h3>
+					   	<p>Real estate is property consisting of land and the buildings on it, along with its natural resources such as crops, minerals or water; immovable property of this nature; an interest vested in this (also) an item of real property, (more generally) buildings or housing in general.
+							Residential real estate may contain either a single family or multifamily structure that is available for occupation or for non-business purposes.Residences can be classified by and how they are connected to neighbouring residences and land. Different types of housing tenure can be used for the same physical type. For example, connected residences might be owned by a single entity and leased out,
+							or owned separately with an agreement covering the relationship between units and common areas and concerns.</p>
+
+				</div>
+				<div class="rsidebar span_1_of_3">
+				      <h3>Land Articles</h3>
+					  <p class="top">
+						  The size of an apartment or house can be described in square feet or meters. In the United States, this includes the area of "living space", excluding the garage and other non-living spaces. The "square meters" figure of a house in Europe may report the total area of the walls enclosing the home, thus including any attached garage and non-living spaces, which makes it important to inquire what kind of surface area definition has been used. It can be described more roughly by the number of rooms.</p>	</div>
+		    </div>
+	</div>
+</div>
+</div>
+
+
+</body>
+</html>
